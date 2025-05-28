@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peminatan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Pendaftaran Peminatan</h1>
+        
+        <form>
+            <h2>Nama</h2>
+            <div class="form-group">
+                <label for="nama"><span class="highlight">Nama anda</span></label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+            </div>
+            
+            <div class="form-group">
+                <label for="nim"><span class="highlight">NIM</span></label>
+                <input type="text" id="nim" name="nim" placeholder="Masukkan NIM anda">
+            </div>
+            
+            <h2>Peminatan pada bidang:</h2>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="programming" name="peminatan" value="Programming">
+                    <label for="programming">Programming</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="desain" name="peminatan" value="Desain">
+                    <label for="desain">Desain</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="jaringan" name="peminatan" value="Jaringan">
+                    <label for="jaringan">Jaringan</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="data" name="peminatan" value="Data">
+                    <label for="data">Data</label>
+                </div>
+            </div>
+            
+            <h2>Informasi Tambahan</h2>
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="angkatan">Angkatan</label>
+                    <select id="angkatan" name="angkatan" class="form-control">
+                        <option value="">Pilih Angkatan</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </div>
+                <div class="form-group half-width">
+                    <label for="tanggal">Tanggal Pendaftaran</label>
+                    <input type="date" id="tanggal" name="tanggal" class="form-control">
+                </div>
+            </div>
+            
+            <h2>Alamat</h2>
+            <div class="form-group">
+                <textarea id="alamat" name="alamat" placeholder="Tulis alamatmu disini"></textarea>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <button type="submit" class="submit-btn">Kirim</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
